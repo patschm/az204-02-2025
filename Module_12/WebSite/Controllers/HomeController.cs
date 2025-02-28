@@ -47,6 +47,7 @@ namespace WebSite.Controllers
             var key = $"products_{id}";
             await _redis.RefreshAsync(key); // Sliding Expiration   
             var products = await _redis.GetStringAsync(key);
+            //string products = null;
             if (string.IsNullOrEmpty(products))
             {
                 await Task.Delay(20000);
@@ -56,8 +57,8 @@ namespace WebSite.Controllers
                 {
                     products= await result.Content.ReadAsStringAsync();
                     await _redis.SetStringAsync(key, products, 
-                        new DistributedCacheEntryOptions { 
-                            AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(120) });
+                        new DistributedCacheEntryOptions {                    
+                           AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(120) });
                 }
             }
        
