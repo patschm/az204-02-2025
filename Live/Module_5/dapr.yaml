@@ -1,0 +1,9 @@
+version: 1
+apps:
+  - appDirPath: ./ToBeContainerd/
+    appID: backend
+    appPort: 5285
+    command: ["dotnet", "run"]
+  - appID: frontend
+    appDirPath: ./Voorkant/
+    command: ["dotnet", "run"]

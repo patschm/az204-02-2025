@@ -1,0 +1,29 @@
+﻿{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:29452",
+      "sslPort": 44394
+    }
+  },
+  "profiles": {
+    "WebSite": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "https://localhost:7296;http://localhost:5003",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Production",
+        "CON_APPCONFIG": "Endpoint=https://ps-config.azconfig.io;Id=jC+P;Secret=CYzRirVUNs2rXIsL3L7NJWkIg7TGlTHexBXp257wF9G3matijS6CJQQJ99BBAC5RqLJJs58ZAAACAZAC2e3f"
+      }
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

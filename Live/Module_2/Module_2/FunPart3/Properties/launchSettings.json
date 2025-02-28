@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "FunPart3": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7007",
+      "launchBrowser": false
+    }
+  }
+}
